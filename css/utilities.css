@@ -188,6 +188,13 @@
   grid-template-rows: repeat(3, 1fr);
 }
 
+.grid-direction-rtl {
+  direction: rtl;
+}
+.grid-direction-ltr {
+  direction: ltr;
+}
+
 .align-self-start {
   align-self: flex-start;
 }
