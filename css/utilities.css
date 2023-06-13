@@ -43,7 +43,7 @@
 .bg-secondary,
 .btn-secondary {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--dark-color);
 }
 .bg-dark,
 .btn-dark {
@@ -62,7 +62,7 @@
 .btn-secondary a,
 .bg-dark a,
 .btn-dark a {
-  color: #fff;
+  color: var(--dark-color);
 }
 
 /* Typography */
@@ -169,7 +169,13 @@
 .align-start {
   align-items: start;
 }
+.align-self-start {
+  align-self: start;
+}
 
+.justify-self-start {
+  justify-self: start;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -198,6 +204,9 @@
 .align-self-start {
   align-self: flex-start;
 }
+.align-self-end {
+  align-self: flex-end;
+}
 
 .justify-self-end {
   justify-self: flex-end;
@@ -205,6 +214,12 @@
 
 .justify-between {
   justify-content: space-between;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-end {
+  justify-content: end;
 }
 
 .cl-1-span-3 {
@@ -408,6 +423,22 @@
 }
 .p-5 {
   padding: 4rem;
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
+.pt-2 {
+  padding-top: 1rem;
+}
+.pt-3 {
+  padding-top: 1.5rem;
+}
+.pt-4 {
+  padding-top: 2rem;
+}
+.pt-5 {
+  padding-top: 3rem;
 }
 
 .pb-1 {
