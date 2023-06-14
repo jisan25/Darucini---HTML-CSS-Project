@@ -57,7 +57,7 @@ pre {
 /* Navbar - Darucini */
 
 .navbar {
-  background-image: url("../images/hero-bg/cucumber.png");
+  background-image: url("../images/hero-bg/cucumber-min.png");
   background-repeat: no-repeat;
   background-position: 94% 60%;
   background-size: 220px;
@@ -136,8 +136,8 @@ pre {
 
 .hero {
   padding: 180px 0px 230px;
-  background-image: url("../images/hero-bg/Salad-Transparent-Hero-2.png"),
-    url("../images/hero-bg/Salad-Transparent-Hero-7.png");
+  background-image: url("../images/hero-bg/Salad-Transparent-Hero-2-min.png"),
+    url("../images/hero-bg/Salad-Transparent-Hero-7-min.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 130% 400%, 30% 160%;
   background-size: auto, 420px;
