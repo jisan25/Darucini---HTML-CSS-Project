@@ -973,11 +973,21 @@ pre {
 @media (max-width: 500px) {
   /* Navbar - Darucini*/
 
+  .navbar {
+    background-position: 110% -100%;
+    background-size: 100px;
+  }
+
   .navbar .nav {
     display: none;
   }
   .navbar .toggle_btn {
     display: block;
+  }
+  .navbar .logo img {
+    height: 40px;
+    width: 100px;
+    margin-top: 5px;
   }
 
   /* Hero */
