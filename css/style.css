@@ -1025,6 +1025,9 @@ pre {
   .latest-recipes p {
     padding: 0 25px;
   }
+  .latest-recipes h2 {
+    font-size: 1.6rem;
+  }
   .latest-recipes p {
     font-size: 1rem;
   }
