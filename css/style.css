@@ -1037,6 +1037,9 @@ pre {
   .latest-recipes .post {
     top: -60px;
   }
+  .latest-recipes {
+    padding: 0 0px 40px;
+  }
 
   /* Recipe Category */
   .recipe-category .flex {
