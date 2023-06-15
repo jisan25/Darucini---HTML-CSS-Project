@@ -339,6 +339,7 @@ pre {
 }
 .recipe-category .category-items img {
   transition: transform 0.2s ease-in;
+  max-width: 95%;
 }
 .recipe-category .category-items img:hover {
   transform: translateY(-15px);
@@ -1063,6 +1064,10 @@ pre {
   }
   .recipe-category .grid {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .recipe-category .category-items .card {
+    margin: 5px;
   }
 
   /* Cooking Habit Solutions - Darucini */
