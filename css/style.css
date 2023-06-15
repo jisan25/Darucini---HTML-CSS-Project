@@ -788,7 +788,7 @@ pre {
     align-items: center;
   }
   .hero-text h2 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   .hero-text a {
     text-align: center;
@@ -852,23 +852,27 @@ pre {
     text-align: center;
   }
   .cooking-habit .solution__img div {
-    width: 85%;
-    background: rgba(92, 184, 92, 0.5);
+    display: none;
+  }
+  .solution__img img {
+    border: 10px solid rgba(92, 184, 92, 0.5);
+    text-align: center;
+  }
+  .solution__img .card {
+    margin: 0px;
   }
   .cooking-habit .solutions > *:nth-child(1) .solution__img img {
-    margin-top: -6.7%;
-    left: 8%;
-    max-width: 80%;
+    position: unset;
+    max-width: 100%;
   }
   .cooking-habit .solutions > *:nth-child(2) .solution__img img {
-    margin-top: -7.5%;
-    left: 8%;
-    max-width: 80%;
+    position: unset;
+    max-width: 100%;
+    border: 10px solid rgba(252, 171, 222, 0.7);
   }
   .cooking-habit .solutions > *:nth-child(3) .solution__img img {
-    margin-top: -3%;
-    left: 7%;
-    max-width: 80%;
+    position: unset;
+    max-width: 100%;
   }
   .cooking-habit .solutions > *:nth-child(2) .solution__img div {
     margin-bottom: 50px;
@@ -887,7 +891,7 @@ pre {
   }
 
   .recreate__line {
-    top: 52.5%;
+    top: 59.5%;
   }
   .recreate_bottom_gray_bg {
     width: 100%;
