@@ -992,6 +992,7 @@ pre {
   .hero-text {
     text-align: center;
     align-items: center;
+    padding: 0 0px;
   }
   .hero-text h2 {
     font-size: 2.5rem;
