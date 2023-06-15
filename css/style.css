@@ -777,15 +777,18 @@ pre {
   /* Hero */
 
   .hero {
-    padding: 180px 0px 230px;
+    padding: 130px 25px 230px;
     background-image: url("../images/hero-bg/Salad-Transparent-Hero-2-min.png");
     background-repeat: no-repeat;
-    background-position: 100% 145%;
+    background-position: 50% 145%;
     background-size: 400px;
   }
   .hero-text {
     text-align: center;
     align-items: center;
+  }
+  .hero-text h2 {
+    font-size: 45px;
   }
   .hero-text a {
     text-align: center;
@@ -800,6 +803,9 @@ pre {
   .features .grid {
     grid-template-columns: 1fr;
   }
+  .feature h4 {
+    line-height: 1.3;
+  }
   /* Latest Recipes */
 
   .latest-recipes .grid {
@@ -807,6 +813,19 @@ pre {
   }
   .latest-recipes {
     padding-bottom: 40px;
+  }
+  .latest-recipes h2,
+  .latest-recipes p {
+    padding: 0 25px;
+  }
+  .latest-recipes p {
+    font-size: 1rem;
+  }
+  .latest-recipes .post {
+    margin-top: 0px;
+  }
+  .recipe .post p {
+    padding: 0px;
   }
 
   /* Recipe Category */
@@ -962,19 +981,19 @@ pre {
     padding: 20px 15px;
     position: absolute;
     top: 32.1%;
-    left: 5.5%;
-    max-width: 89%;
+    left: 6.5%;
+    max-width: 87%;
   }
   .trending .events > *:nth-child(2) .info {
     position: absolute;
     top: 59.3%;
-    left: 5.5%;
+    left: 6.5%;
   }
   .trending .events > *:nth-child(3) .info {
     position: absolute;
-    top: 88%;
-    left: 5.2%;
-    width: 89%;
+    top: 86.7%;
+    left: 6.5%;
+    width: 87%;
   }
   .trending .event .info h4 {
     font-size: 15px;
@@ -999,14 +1018,14 @@ pre {
     text-align: center;
   }
   .footer .grid .register h2 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .footer .grid .submit {
     text-align: center;
-    padding: 20px 30px 30px;
+    padding: 20px 20px 30px;
   }
   .footer .grid .submit h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .footer .submit form input[type="text"] {
     width: 65%;
