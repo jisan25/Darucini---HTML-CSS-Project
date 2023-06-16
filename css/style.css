@@ -998,10 +998,10 @@ input[type="checkbox"] {
   /* Navbar - Darucini*/
 
   .wrapper ul {
-    top: 42.5%;
+    top: 50%;
   }
   .wrapper ul li {
-    margin: 3px 0;
+    margin: 0px 0;
   }
   .wrapper ul li a {
     font-size: 16px;
