@@ -54,6 +54,91 @@ pre {
   height: 0;
 }
 
+/* Full Screen Overlay Navigation */
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary-color);
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+  /* display: none; */
+}
+#active:checked ~ .wrapper {
+  clip-path: circle(75%);
+}
+.menu-btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 5;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  background: var(--dark-color);
+  transition: all 0.3s ease;
+  /* display: none; */
+}
+#active:checked ~ .menu-btn {
+  background: #fff;
+  color: var(--dark-color);
+}
+#active:checked ~ .menu-btn i:before {
+  content: "\f00d";
+}
+.wrapper ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li {
+  margin: 12px 0;
+}
+.wrapper ul li a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0px 50px;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+
+.wrapper ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  left: 0;
+  z-index: -1;
+  border-radius: 50px;
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after {
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover {
+  color: var(--dark-color);
+}
+input[type="checkbox"] {
+  display: none;
+}
+
 /* Navbar - Darucini */
 
 .navbar {
@@ -69,67 +154,6 @@ pre {
   width: 150px;
   object-fit: cover;
   object-position: 0 8%;
-}
-.navbar nav ul li {
-  margin-right: 30px;
-}
-.navbar nav ul li a {
-  color: var(--dark-color);
-  font-size: 16px;
-  padding-bottom: 7px;
-  font-weight: 600;
-}
-
-.navbar nav ul li a:hover {
-  color: #000;
-  border-bottom: 2px solid #000;
-}
-
-.navbar nav .btn {
-  padding-top: 8px;
-}
-
-.navbar nav .btn:hover {
-  color: var(--light-color);
-  border-bottom: none;
-  background: var(--link-color);
-}
-
-.navbar .toggle_btn {
-  color: var(--dark-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.dropdown_menu {
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 80%;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 2;
-}
-
-.dropdown_menu.open {
-  height: auto;
-}
-.dropdown_menu li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dropdown_menu li a {
-  color: var(--secondary-color);
-}
-.dropdown_menu .btn {
-  color: var(--dark-color);
 }
 
 /* Hero */
@@ -760,6 +784,10 @@ pre {
 /* Tablets and Under */
 
 @media (max-width: 768px) {
+  .wrapper ul {
+    top: 35%;
+  }
+
   .nabnar {
     width: 100vw;
   }
@@ -774,12 +802,7 @@ pre {
   .container {
     padding: 0 28px;
   }
-  .navbar .nav {
-    display: none;
-  }
-  .navbar .toggle_btn {
-    display: block;
-  }
+
   .hero {
     padding: 130px 25px 230px;
     background-image: url("../images/hero-bg/Salad-Transparent-Hero-2-min.png");
@@ -974,17 +997,17 @@ pre {
 @media (max-width: 500px) {
   /* Navbar - Darucini*/
 
+  .wrapper ul {
+    top: 42.5%;
+  }
+  .wrapper ul li a {
+    font-size: 20px;
+  }
   .navbar {
     background-position: 110% -100%;
     background-size: 100px;
   }
 
-  .navbar .nav {
-    display: none;
-  }
-  .navbar .toggle_btn {
-    display: block;
-  }
   .navbar .logo img {
     height: 40px;
     width: 100px;
