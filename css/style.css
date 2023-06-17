@@ -388,6 +388,7 @@ input[type="checkbox"] {
   flex-direction: column;
   opacity: 0;
   transition: 0.6s;
+  border-radius: 10px;
 }
 
 .recipe-category .img-content-container .content:hover {
@@ -902,6 +903,18 @@ input[type="checkbox"] {
   .recipe-category .category-items img {
     max-width: 92%;
   }
+  .recipe-category .img-content-container .content {
+    width: 92%;
+    height: 94.5%;
+  }
+
+  .recipe-category .img-content-container .content h1 {
+    font-size: 1rem;
+  }
+  .recipe-category .img-content-container .content p {
+    font-size: 0.7rem;
+    margin: 0px;
+  }
 
   .cooking-habit {
     text-align: center;
@@ -1150,6 +1163,20 @@ input[type="checkbox"] {
   }
   .recipe-category .category-items .card {
     margin: 5px;
+  }
+
+  .recipe-category .img-content-container .content h1 {
+    font-size: 0.75rem;
+  }
+  .recipe-category .img-content-container .content p {
+    display: none;
+  }
+
+  .recipe-category .img-content-container .content {
+    width: 92%;
+    height: 83.5%;
+    top: 5px;
+    left: 5px;
   }
 
   /* Cooking Habit Solutions - Darucini */
