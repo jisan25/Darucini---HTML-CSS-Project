@@ -1171,15 +1171,18 @@ input[type="checkbox"] {
   }
 
   .recipe-category .img-content-container .content h1 {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
   .recipe-category .img-content-container .content p {
-    display: none;
+    /* display: none; */
+    max-width: 280px;
+    line-height: 1.2;
   }
 
   .recipe-category .img-content-container .content {
     width: 92%;
-    height: 83.5%;
+    height: 92.5%;
     top: 5px;
     left: 5px;
   }
