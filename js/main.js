@@ -91,16 +91,14 @@ function displayMenuButtons() {
   });
 }
 
-// const questions = document.querySelectorAll(".question");
+// Close Full Screen Overlay Navigation on Click
 
-// questions.forEach((question) => {
-//   const btn = question.querySelector(".question-btn");
-//   btn.addEventListener("click", () => {
-//     questions.forEach((item) => {
-//       if (item !== question) {
-//         item.classList.remove("show-text");
-//       }
-//     });
-//     question.classList.toggle("show-text");
-//   });
-// });
+const inputActive = document.getElementById("active");
+
+// select links
+const scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    inputActive.checked = false;
+  });
+});

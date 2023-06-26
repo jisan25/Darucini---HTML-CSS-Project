@@ -54,6 +54,10 @@ pre {
   height: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Full Screen Overlay Navigation */
 
 .wrapper {
@@ -1064,7 +1068,7 @@ input[type="checkbox"] {
   /* Navbar - Darucini*/
 
   .wrapper ul {
-    top: 50%;
+    top: 43%;
   }
   .wrapper ul li {
     margin: 0px 0;

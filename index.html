@@ -16,17 +16,21 @@
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
     <div class="wrapper">
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Find Recipe</a></li>
-        <li><a href="#">Make Recipe</a></li>
-        <li><a href="#">Recreate Recipe</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a class="btn btn-light rounded-lg" href="#">Register</a></li>
+        <li><a class="scroll-link" href="#home">Home</a></li>
+        <li><a class="scroll-link" href="#features">Features</a></li>
+        <li><a class="scroll-link" href="#recipes">Recipes</a></li>
+        <li><a class="scroll-link" href="#browse">Browse</a></li>
+        <li><a class="scroll-link" href="#solutions">Solutions</a></li>
+        <li><a class="scroll-link" href="#recreate">Recreate</a></li>
+        <li><a class="scroll-link" href="#review">Review</a></li>
+        <li><a class="scroll-link" href="#trending">Trending</a></li>
+        <li><a class="scroll-link" href="#contact">Contact</a></li>
+        <li>
+          <a class="btn btn-light rounded-lg" href="#">Register</a>
+        </li>
       </ul>
     </div>
-    <div class="navbar py-1 bg-primary">
+    <div class="navbar py-1 bg-primary" id="home">
       <div class="container flex justify-between">
         <div class="logo">
           <a href="/"><img src="images/logo/darucini_transparent.svg" /></a>
@@ -47,7 +51,7 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
       <div class="container grid grid-3">
         <div class="feature">
           <i class="fa-solid fa-bowl-rice"></i>
@@ -67,7 +71,7 @@
       </div>
       <hr />
     </section>
-    <section class="latest-recipes">
+    <section class="latest-recipes" id="recipes">
       <h2>Latest Recipes from the community</h2>
       <p class="latest-recipes__subheading">
         Newly added recipe for your inspiration
@@ -163,7 +167,7 @@
       </div>
       <hr class="container" />
     </section>
-    <section class="recipe-category pb-4">
+    <section class="recipe-category pb-4" id="browse">
       <div class="container">
         <h2 class="text-center">Browse Recipe by Category</h2>
         <p class="text-center">Find recipe you have in mind with ease</p>
@@ -182,7 +186,7 @@
         <hr />
       </div>
     </section>
-    <section class="cooking-habit">
+    <section class="cooking-habit" id="solutions">
       <div class="container">
         <h2 class="text-center">One stop solutions for your cooking habit</h2>
         <div class="solutions">
@@ -243,7 +247,7 @@
         </div>
       </div>
     </section>
-    <section class="recipe-recreate">
+    <section class="recipe-recreate" id="recreate">
       <div class="recreate-text">
         <h2 class="text-center">Recreate a Recipe</h2>
         <p class="text-center">
@@ -261,7 +265,7 @@
       <div class="recreate__line"></div>
       <div class="recreate_bottom_gray_bg"></div>
     </section>
-    <section class="review">
+    <section class="review" id="review">
       <div class="container">
         <div class="grid">
           <div class="review__img">
@@ -283,7 +287,7 @@
         </div>
       </div>
     </section>
-    <section class="trending bg-secondary">
+    <section class="trending bg-secondary" id="trending">
       <div class="container">
         <h2 class="text-center">What's Trending in the Darucini world</h2>
         <div class="events grid grid-3">
@@ -329,7 +333,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer bg-primary pt-2 pb-2">
+    <footer class="footer bg-primary pt-2 pb-2" id="contact">
       <div class="container">
         <div class="grid">
           <div class="register">
