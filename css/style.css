@@ -1163,7 +1163,7 @@ input[type="checkbox"] {
     margin: 5px;
   }
   .recipe-category .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
   }
   .recipe-category .category-items .card {
