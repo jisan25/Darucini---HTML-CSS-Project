@@ -63,13 +63,15 @@ html {
 .wrapper {
   position: fixed;
   top: 0;
+  /* top: 20px; */
   left: 0;
   height: 100%;
   width: 100%;
   background: var(--primary-color);
-  clip-path: circle(25px at calc(100% - 45px) 45px);
+  /* clip-path: circle(25px at calc(100% - 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 37px);
   transition: all 0.3s ease-in-out;
-  z-index: 4;
+  z-index: 5;
   display: none;
 }
 #active:checked ~ .wrapper {
@@ -78,8 +80,9 @@ html {
 .menu-btn {
   position: fixed;
   right: 20px;
-  top: 20px;
-  z-index: 5;
+  /* top: 20px; */
+  top: 12px;
+  z-index: 6;
   text-align: center;
   line-height: 50px;
   height: 50px;
@@ -92,6 +95,13 @@ html {
   transition: all 0.3s ease;
   display: none;
 }
+/* .wrapper-fix {
+  top: 20px;
+  clip-path: circle(25px at calc(100% - 45px) 17px);
+}
+.menu-btn-fix {
+  top: 12px;
+} */
 #active:checked ~ .menu-btn {
   background: #fff;
   color: var(--dark-color);
@@ -893,7 +903,7 @@ input[type="checkbox"] {
   background: var(--light-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 10px 40px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .fixed-nav a {
@@ -1466,7 +1476,7 @@ input[type="checkbox"] {
     flex-direction: column;
   }
   .footer .menu nav ul li {
-    margin-bottom: 5px;
+    margin-bottom: 9px;
   }
   .footer .menu nav ul li a {
     padding-bottom: 2px;
@@ -1498,5 +1508,9 @@ input[type="checkbox"] {
   .footer .copyright .help h4 i {
     padding: 4px;
     font-size: 10px;
+  }
+
+  .fixed-nav {
+    padding: 10px 10px;
   }
 }
