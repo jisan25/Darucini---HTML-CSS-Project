@@ -12,9 +12,12 @@
     />
   </head>
   <body>
+    <!-- Fullscreen OVerlay Navigation For Mobile & Tab -->
     <input type="checkbox" id="active" />
+    <!-- Menu Button -->
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
     <div class="wrapper">
+      <!-- Menu -->
       <ul class="menu">
         <li><a class="scroll-link" href="#home">Home</a></li>
         <li><a class="scroll-link" href="#features">Features</a></li>
@@ -30,13 +33,34 @@
         </li>
       </ul>
     </div>
+    <!-- End Navigation For Mobile & Tab -->
+
+    <!-- Desktop Navbar -->
     <div class="navbar py-1 bg-primary" id="home">
-      <div class="container flex justify-between">
+      <div class="wrapper__logo_menu container flex justify-between">
+        <!-- Logo -->
         <div class="logo">
-          <a href="/"><img src="images/logo/darucini_transparent.svg" /></a>
+          <a class="scroll-link" href="#home"
+            ><img src="images/logo/darucini_transparent.svg"
+          /></a>
+        </div>
+        <div class="navbar__menu flex">
+          <a class="mx-1 fw-500 scroll-link" href="#home">Home</a>
+          <a class="mx-1 fw-500 scroll-link" href="#recipes">Recipes</a>
+          <a class="mx-1 fw-500 scroll-link" href="#browse">Browse</a>
+          <a class="mx-1 fw-500 scroll-link" href="#solutions">Solution</a>
+          <a class="mx-1 fw-500 scroll-link" href="#recreate">Recreate</a>
+          <a class="mx-1 fw-500 scroll-link" href="#review">Review</a>
+          <a class="mx-1 fw-500 scroll-link" href="#trending">Trending</a>
+          <a
+            class="mx-1 fw-500 scroll-link navbar__menu_btn_contact"
+            href="#contact"
+            >Contact</a
+          >
         </div>
       </div>
     </div>
+    <!-- End Desktop Navbar -->
     <section class="hero bg-primary" id="hero">
       <div class="container">
         <div class="hero-text flex flex-column align-start">
@@ -45,7 +69,7 @@
             We offer Biriyani, Fast Food, desserts, Ice-Cream and a variety of
             other delicious dishes.
           </p>
-          <a href="#" class="btn btn-light text-dark rounded-lg"
+          <a href="#browse" class="btn btn-light text-dark rounded-lg"
             >Gets Started!</a
           >
         </div>
@@ -342,12 +366,12 @@
               Let the others know and try!
             </h2>
             <p>Join millions of self learning cooks on the globe</p>
-            <a href="#" class="btn btn-light rounded-lg">Register Now</a>
+            <a href="#contact" class="btn btn-light rounded-lg">Register Now</a>
           </div>
           <div class="submit">
             <h2>Stay informed with new recipes and culinary news</h2>
             <p>Subscribe to our mailing list. we wont spam.</p>
-            <form action="#">
+            <form action="">
               <input type="text" placeholder="Your email address" />
               <input type="submit" value="submit" />
             </form>
@@ -357,14 +381,15 @@
         <div class="menu flex justify-between">
           <nav>
             <ul class="flex">
-              <li><a href="#">Find Recipe</a></li>
-              <li><a href="#">Share Recipe</a></li>
-              <li><a href="#">Make Recipe</a></li>
-              <li><a href="#">Recreate Recipe</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Register</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#browse">Browse</a></li>
+              <li><a href="#solutions">Solution</a></li>
+              <li><a href="#recreate">Recreate</a></li>
+              <li><a href="#review">Review</a></li>
+              <li><a href="#trending">Trending</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <div class="social">
@@ -395,6 +420,9 @@
         </div>
       </div>
     </footer>
+    <a href="#home" class="top-link scroll-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

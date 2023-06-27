@@ -97,8 +97,68 @@ const inputActive = document.getElementById("active");
 
 // select links
 const scrollLinks = document.querySelectorAll(".scroll-link");
+
+// ************** Go To Top *****************
+
+const navbar = document.querySelector(".navbar");
+const topLink = document.querySelector(".top-link");
+const navbarMenuBtnContact = document.querySelector(
+  ".navbar__menu_btn_contact"
+);
+
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.scrollY;
+  const navHeight = navbar.getBoundingClientRect().height;
+
+  //   Add Fixed Navbar after scrollbar pass the navbar
+
+  if (scrollHeight > navHeight) {
+    navbar.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed-nav");
+  }
+
+  // setup back to top link
+
+  if (scrollHeight > 500) {
+    topLink.classList.add("show-link");
+    // remove extra padding when fixed navbar added to menubar contact button
+    navbarMenuBtnContact.classList.remove("navbar__menu_btn_contact");
+  } else {
+    topLink.classList.remove("show-link");
+    navbarMenuBtnContact.classList.add("navbar__menu_btn_contact");
+  }
+});
+
+// ********** smooth scroll ************
+// select links
+const linksContainer = document.querySelector(".wrapper__logo_menu");
+
 scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
+    // prevent default
+    e.preventDefault();
+    // navigate to specific spot
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    const navHeight = navbar.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    const fixedNav = navbar.classList.contains("fixed-nav");
+    let position = element.offsetTop - navHeight;
+
+    if (!fixedNav) {
+      position = position - navHeight - 60;
+    } else {
+      position = position - containerHeight;
+    }
+    if (navHeight > 82) {
+      position = position + containerHeight;
+    }
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
     inputActive.checked = false;
   });
 });

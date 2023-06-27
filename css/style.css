@@ -70,7 +70,7 @@ html {
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
   z-index: 4;
-  /* display: none; */
+  display: none;
 }
 #active:checked ~ .wrapper {
   clip-path: circle(75%);
@@ -90,7 +90,7 @@ html {
   cursor: pointer;
   background: var(--dark-color);
   transition: all 0.3s ease;
-  /* display: none; */
+  display: none;
 }
 #active:checked ~ .menu-btn {
   background: #fff;
@@ -158,6 +158,12 @@ input[type="checkbox"] {
   width: 150px;
   object-fit: cover;
   object-position: 0 8%;
+}
+
+.navbar__menu_btn_contact {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 30px;
+  border-radius: 10px;
 }
 
 /* Hero */
@@ -837,17 +843,88 @@ input[type="checkbox"] {
   padding: 8px;
   border-radius: 50%;
 }
-/* Animations */
 
-/* Tablets and Under */
+/* Go to Top */
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--dark-color);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  color: var(--light-color);
+  animation: bounce 2s ease-in-out infinite;
+
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* End Go to Top */
+
+/* Fixed Navbar */
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: var(--light-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+  z-index: 3;
+}
+
+.fixed-nav a {
+  color: var(--dark-color);
+}
+.fixed-nav a:hover {
+  color: #8b8000;
+}
+
+/* End Fixed Navbar */
+
+/* ********** ANIMATIONS ************* */
+
+/* ************* TABS & UNDER **************** */
 
 @media (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
   .wrapper ul {
-    top: 35%;
+    top: 50%;
+  }
+  .menu-btn {
+    display: block;
   }
 
   .nabnar {
     width: 100vw;
+  }
+  .navbar__menu {
+    display: none;
   }
   .features .grid,
   .latest-recipes .grid,
